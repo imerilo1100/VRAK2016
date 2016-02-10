@@ -1,2 +1,3 @@
 # VRAK2016
-Veebirakenduse loomine kevad 2016
+E-hääletuse võrgurakendus
+Iris Merilo, Andre Peedosaar, Herko Pirk
