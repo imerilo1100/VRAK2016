@@ -1,4 +1,4 @@
 # VRAK2016
 
-E-hääletuse võrgurakendus  
+<b>E-hääletuse võrgurakendus</b>  
 Autorid: Iris Merilo, Andre Peedosaar, Herko Pirk
