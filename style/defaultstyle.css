@@ -89,3 +89,33 @@ input[type=submit]{
 	margin: 0px; 
 	width: 33.334%; 
 }
+
+@media all and (min-width:1080px){
+	.column{
+		width:100%;
+	}
+}
+
+@media all and (max-width:1079px) and (min-width:900px) {
+	.column{
+		width:100%;
+	}
+}
+
+@media all and (max-width:899px) and (min-width:768px){
+	.column{
+		width:100%;
+	}
+}
+
+@media all and (max-width:767px) and (min-width:480px){
+	.column{
+		width:100%;
+	}
+}
+
+@media all and (max-width:479px) {
+	.column{
+		width:100%;
+	}
+}
