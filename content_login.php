@@ -6,7 +6,7 @@
 	 	 --><button class="togglebtn">Digi-ID</button><!--
 	 	 --><button class="togglebtn">Mobiil-ID</button>
 		</div>
-		<form action="./loggedin.html">
+		<form action="prototype/pages/loggedin.html">
 			<br><br>
 			<b>Salasõna: </b><br>
 			<input type="text"></input><br><br>
