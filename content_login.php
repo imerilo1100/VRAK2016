@@ -1,5 +1,8 @@
-<div id="contentcontainer">
-	<div id="logininfo"><p></p></div>
+	<div id="logininfo"><p>
+			Sisse loginutele:
+			<a href="?page=create_voting">Lisa valimine</a>
+			<a href="?page=create_candidate">Lisa kandidaat</a>
+		</p></div>
 	<div id="loginfields">
 		<div id="togglebuttons">
 			<button class="togglebtn">ID-Kaart</button><!--
@@ -8,9 +11,11 @@
 		</div>
 		<form action="./loggedin.html">
 			<br><br>
+			<b>Kasutajanimi: </b><br>
+			<input type="text" name="username"><br>
 			<b>Salasõna: </b><br>
-			<input type="text"></input><br><br>
-			<input type="submit" value="Autendi"></input>
+			<input type="password" name="password"><br><br>
+			<input type="submit" value="Autendi">
 		</form>
 	</div>
-</div>
+
