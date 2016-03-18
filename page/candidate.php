@@ -50,7 +50,6 @@ if($_POST["select_voting"]) {
 
 
                 if ($db) {
-                    $err="vvvvvvvvvvvvvvv";
                     $result1 = pg_query($db, "SELECT firstname, lastname, voting, votenumber, party FROM candidate WHERE voting=$voting");
                     while ($row = pg_fetch_assoc($result1)) {
                         $firstname = $row["firstname"];
