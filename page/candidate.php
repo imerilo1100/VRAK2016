@@ -5,13 +5,12 @@ if($_POST["select_voting"]) {
     $voting = $_POST["voting"];
 }
 ?>
-
+<div class="candidateSelect">
     <b>Valimised:</b>
     <form method="post" action="" name="show_voting">
         <select name="voting">
             <option value="0" <?php if(!$voting)echo"selected='selected'"?> disabled="disabled">Vali</option>
             <?php
-
             if($db){
 
                 $result = pg_query($db, "SELECT * FROM voting");
@@ -33,13 +32,32 @@ if($_POST["select_voting"]) {
         </select>
         <input type="submit" name="select_voting" value="Vali">
 </form>
+</div>
 <?php
 
 
         if($voting) {
+            $candidateSum = 0;
+            $voteSum = 0;
+            if($db){
+                $res = pg_query($db, "SELECT sumOfCandidates($voting)");
+                $value1 = pg_fetch_result($res, 0);
+                $res1 = pg_query($db, "SELECT sumOfVotes($voting)");
+                $value2 = pg_fetch_result($res1, 0);
+                if($value1){
+                    $candidateSum = $value1;
+                }
+                if($value2){
+                    $voteSum = $value2;
+                }
 
+            }
 
             ?>
+            <div class="candidateInfo">
+                Kandidaate kokku: <?php echo $candidateSum;?><br>
+                Hääletanuid kokku: <?php echo $voteSum;?>
+            </div>
             <table>
                 <tr>
                     <td><b>Nimi</b></td>

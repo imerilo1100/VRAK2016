@@ -1,6 +1,6 @@
 <div id="header">
 	<h1>Tere tulemast e-hääletamiste lehele!</h1>	
-	<table><tr>
+	<table class="menu"><tr>
 			<td><a href="">Valimistest</a></td>
 			<td><a href="?page=candidate">Kandidaatide nimekiri</a></td>
 			<td><a href="">Abi</a></td>

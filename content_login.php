@@ -11,7 +11,10 @@ if($db){
 }
 
 if(!isset($user)) {
-
+	$to = "";
+	if(isset($_GET["to"])){
+		$to = "?page=".$_GET["to"];
+	}
 
 	$login_error = "";
 	if ($_POST["check_login"]) {
@@ -27,7 +30,7 @@ if(!isset($user)) {
 					$login_error = "õige!";
 					//session_start();
 					$_SESSION["login_user"] = $username;
-					header("Location: /");
+					header("Location: /".$to);
 				} else {
 					$login_error = "Kasutajanimi ja/või parool on vale(d)!";
 				}

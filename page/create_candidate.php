@@ -11,7 +11,7 @@ if($db){
 }
 
 if(!isset($user)){
-    echo "<span class='error'>Selle lehe nägemiseks pead olema sisse loginud</span>";
+    echo "<span class='error'>Selle lehe nägemiseks pead olema sisse loginud <a href='?to=create_candidate'>Logi sisse</a></span>";
 }
 else{
 $candidate_error = "";
