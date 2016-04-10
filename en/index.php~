@@ -1,9 +1,10 @@
 <?php 
 	if (session_status()==PHP_SESSION_NONE){session_start();} 
+	setcookie("e_election_lang", "en", time()+(86400*30)); 
 ?>
 <!DOCTYPE html> <!--HTML 5: http://www.w3schools.com/tags/tag_doctype.asp -->
 
-<html lang="et">
+<html lang="en">
 	<?php require("header.php");?> 
 	<?php require("banner.php");?>
 	<div id="contentcontainer">
@@ -13,5 +14,5 @@
 			} else {require("login.php");}
 		?> 
 	</div>
-	<?php require("fin.php");?> 
+	<?php require("../fin.php");?> 
 </html>

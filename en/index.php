@@ -1,9 +1,7 @@
-<?php 
-	if (session_status()==PHP_SESSION_NONE){session_start();} 
-?>
+<?php if (session_status()==PHP_SESSION_NONE){session_start();} ?>
 <!DOCTYPE html> <!--HTML 5: http://www.w3schools.com/tags/tag_doctype.asp -->
 
-<html lang="et">
+<html lang="en">
 	<?php require("header.php");?> 
 	<?php require("banner.php");?>
 	<div id="contentcontainer">
@@ -13,5 +11,5 @@
 			} else {require("login.php");}
 		?> 
 	</div>
-	<?php require("fin.php");?> 
+	<?php require("../fin.php");?> 
 </html>
