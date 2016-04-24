@@ -22,8 +22,8 @@
 
         $.post("/function/checkvalues.php", {
             title : title
-        }).done(function(error){
-            if(error.length==0)
+        }).done(function(value){
+            if(value)
             {
                 document.getElementById("titleck").innerHTML=title+" on saadaval!";
             }
@@ -33,3 +33,29 @@
             }
         });
     }
+
+    $(document).ready(function() {
+        var ch = false;
+        function last_candidate(){
+            ch=true;
+            var ID = $(".candidateList:last").attr("id");
+            $('div#last_cand_loader').html('Laadin...');
+            $.post("function/load_more.php?last_cand="+ID,
+                function (data) {
+                    if(data != ""){
+                        $(".candidateList:last").after(data);
+                    }
+                    $('div#last_cand_loader').empty();
+                    ch=false;
+                });
+        }
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() == $(document).height() - $(window).height()){
+                if(ch == false) {
+                    last_candidate();
+                }
+            }
+        })
+
+    });

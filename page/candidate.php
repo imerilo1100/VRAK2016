@@ -31,6 +31,7 @@ if($_POST["select_voting"]) {
 
         </select>
         <input type="submit" name="select_voting" value="Vali">
+
 </form>
 </div>
 <?php
@@ -68,14 +69,16 @@ if($_POST["select_voting"]) {
 
 
                 if ($db) {
-                    $result1 = pg_query($db, "SELECT firstname, lastname, voting, votenumber, party FROM candidate WHERE voting=$voting");
+                    $result1 = pg_query($db, "SELECT id, firstname, lastname, voting, votenumber, party FROM candidate WHERE voting=$voting ORDER BY id DESC LIMIT 2");
                     while ($row = pg_fetch_assoc($result1)) {
+                        $id = $row["id"];
                         $firstname = $row["firstname"];
                         $lastname = $row["lastname"];
                         $votenumber = $row["votenumber"];
                         $party = $row["party"];
+                        $candID = "CD". $voting . "-" . $id;
 
-                        echo "<tr>
+                        echo "<tr id='$candID' class='candidateList'>
                 <td>$firstname $lastname</td>
                 <td>$party</td>
                 <td>$votenumber</td>
@@ -85,8 +88,9 @@ if($_POST["select_voting"]) {
 
                 }
                 ?>
-
+                <tr><td colspan="3"><div id="last_cand_loader"></div></td></tr>
             </table>
+
             <?php
 
     }

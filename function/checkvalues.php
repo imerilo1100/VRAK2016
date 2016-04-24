@@ -15,8 +15,8 @@ function findTitle($title){
         $result = pg_query($db, "SELECT title FROM voting WHERE title = '".$title."'");
         $row = pg_fetch_assoc($result);
         if($row["title"]){
-            return "error";
+            return false;
         }
     }
-    return null;
+    return true;
 }

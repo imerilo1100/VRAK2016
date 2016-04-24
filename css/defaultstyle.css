@@ -116,3 +116,9 @@ input[type=submit]{
 	float: right;
 	margin: 10px;
 }
+
+#map {
+	width:500px;
+	height:380px;
+	margin: 5px;
+}
