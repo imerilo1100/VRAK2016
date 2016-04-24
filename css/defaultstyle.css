@@ -54,6 +54,19 @@ input[type=submit]{
 	margin-left: 0px
 }
 
+.ui-autocomplete {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+	background:white;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus {
+	font-weight: bold;
+}
+
 #header {
 	background: #003300; 
 	background: linear-gradient(#004D00, #66FF66); 

@@ -31,7 +31,10 @@ if($_POST["select_voting"]) {
 
         </select>
         <input type="submit" name="select_voting" value="Vali">
-
+        <div class="frmSearch">
+            <input type="text" id="search" size="25">
+            <div id="suggestion-box"></div>
+        </div>
 </form>
 </div>
 <?php
