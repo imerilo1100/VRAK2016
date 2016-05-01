@@ -2,7 +2,7 @@
 </div>
 <div id="loginfields">
 	<div id="togglebuttons">
-    	<script src="../js/loginselection.js"></script>
+    	<script src="/js/loginselection.js"></script>
 		<button class="togglebtn" onclick="set_local_login();">Local user</button>
 		<button class="togglebtn" onclick="set_google_login();">Google account</button>
 	</div>

@@ -2,13 +2,14 @@
 </div>
 <div id="loginfields">
 	<div id="togglebuttons">
-		<button class="togglebtn">Kohalik</button>
-		<button class="togglebtn">ID-Kaart</button>
-		<button class="togglebtn">Digi-ID</button>
-		<button class="togglebtn">Mobiil-ID</button>
+    	<script src="/js/loginselection.js"></script>
+		<button class="togglebtn" onclick="set_local_login();">Kohalik</button>
+		<button class="togglebtn" onclick="set_google_login();">Google'i kasutaja</button>
 	</div>
 	<form action="func/log_in.php" method="post" name="login">
-		<div class="error"><?php echo $login_error."<br>"; ?></div>
+		<div class="error">
+			<?php if(isset($login_error)&&!empty($login_error)) echo $login_error;?>
+		</div><br>
 		<div><b>Kasutajanimi: </b></div>
 		<input type="text" name="username"><br>
 		<div><b>Salasõna: </b></div>

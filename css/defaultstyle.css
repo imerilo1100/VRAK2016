@@ -100,19 +100,19 @@ input[type=submit]{
 	border: 1px solid #668866;
 	padding: 5px; 
 	margin: -2px;
-	width: 25%; 
+	width: 50.2%; 
 }
 
 .error {
 	color: red;
 }
 
-.candidateSelect {
+.select_left {
 	float: left;
 	margin: 10px;
 }
 
-.candidateInfo {
+.overview_right {
 	float: right;
 	margin: 10px;
 }
