@@ -1,12 +1,14 @@
 <?php
 	include "data/config.php";
-	if (isset($_SESSION["login_user"])) {$logged_user = pg_escape_string($_SESSION["login_user"]);}
-	if($db){
-		$res = pg_query($db, "SELECT username FROM person WHERE username ='".$logged_user."'");
-		$rw = pg_fetch_assoc($res);
-		$user = $rw["username"];
+	if (isset($_SESSION["login_user"])) {
+		$logged_user = pg_escape_string($_SESSION["login_user"]);
+		if($db){
+			$res = pg_query($db, "SELECT username FROM person WHERE username ='".$logged_user."'");
+			$rw = pg_fetch_assoc($res);
+			$user = $rw["username"];
+		}
 	}
-	if(!isset($user)) {
+	if(!isset($user)&&$db) {
 		$to = "";
 		if(isset($_GET["to"])){$to = "?page=".$_GET["to"];}
 		$login_error = "";
