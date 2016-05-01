@@ -35,7 +35,7 @@
 </div>
 
 <?php
-	if($voting) {
+	if($voting!="") {
 		$candidateSum = 0;
 		$voteSum = 0;
 		if($db){
@@ -60,7 +60,7 @@
 		<td><b>Number</b></td>
 	</tr>
     <?php
-		if ($db) {
+		if ($db&&$voting!="") {
 			$result1 = pg_query($db, "SELECT id, firstname, lastname, voting, votenumber, party FROM candidate WHERE voting=$voting ORDER BY id DESC LIMIT 2");
 			while ($row = pg_fetch_assoc($result1)) {
 				$id = $row["id"];
