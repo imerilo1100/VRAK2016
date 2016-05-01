@@ -30,6 +30,10 @@
 
 	<div id="contentcontainer">
 		<?php
+			//Testing only BEGIN
+			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
+			//Testing only END
 			if (isset($_GET['page'])) {
 				if (file_exists('page/' . $_GET['page'] . '.php')) {require('page/' . $_GET['page'] . '.php');} 
 				else if($_GET['page'] = "login"){require "content_login.php";} 
