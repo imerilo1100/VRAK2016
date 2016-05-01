@@ -5,7 +5,7 @@
 	<?php
 		$lang_file = '';
 		$language = '';
-		session_start();
+		if (session_status()==PHP_SESSION_NONE){session_start();}
 		header('Cache-control: private'); // IE 6 FIX
 		if(isSet($_GET['lang'])) {
 			$language = $_GET['lang'];

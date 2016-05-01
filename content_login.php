@@ -1,6 +1,5 @@
 <?php
 	include "data/config.php";
-	session_start();
 	$logged_user = pg_escape_string($_SESSION["login_user"]);
 	if($db){
 		$res = pg_query($db, "SELECT username FROM person WHERE username ='".$logged_user."'");
@@ -11,7 +10,7 @@
 		$to = "";
 		if(isset($_GET["to"])){$to = "?page=".$_GET["to"];}
 		$login_error = "";
-		if ($_POST["check_login"]) {
+		if (isset($_POST["check_login"])) {
 			$username = pg_escape_string($_POST["username"]);
 			$password = pg_escape_string($_POST["password"]);
 			if ($username && $password) {
