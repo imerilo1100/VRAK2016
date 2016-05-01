@@ -50,8 +50,8 @@
 ?>
 
 <div class="candidateInfo">
-	Kandidaate kokku: <?php echo $candidateSum;?><br>
-    Hääletanuid kokku: <?php echo $voteSum;?>
+	<?php if(isset($candidateSum)){echo "Kandidaate kokku: " . $candidateSum;}?><br>
+    <?php if(isset($voteSum)) {echo "Hääletanuid kokku: " . $voteSum;}?>
 </div>
 <table>
 	<tr>
