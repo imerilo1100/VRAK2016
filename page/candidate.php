@@ -72,7 +72,7 @@
             }
             echo pg_last_error($db);
 		}
+		pg_close($db);
 	?>
     <tr><td colspan="3"><div id="last_cand_loader"></div></td></tr>
 </table>
-<?php } pg_close($db);?>
