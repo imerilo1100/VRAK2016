@@ -1,7 +1,7 @@
 <?php
 	include "../data/config.php";
 	$voting = "";
-	if($_POST["select_voting"]) {$voting = $_POST["voting"];}
+	if(isset($_POST["select_voting"])) {$voting = $_POST["voting"];}
 ?>
 
 <div class="candidateSelect">
