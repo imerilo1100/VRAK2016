@@ -1,8 +1,10 @@
 <?php
 //include "../data/config.php";
 //include "../function/checkvalues.php";
-
-$logged_user = pg_escape_string($_SESSION["login_user"]);
+$logged_user = "";
+if(isset($_SESSION["login_user"])) {
+    $logged_user = pg_escape_string($_SESSION["login_user"]);
+}
 $id = "";
 if($db){
     $res = pg_query($db, "SELECT id, username FROM person WHERE username ='".$logged_user."'");

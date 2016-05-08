@@ -1,7 +1,9 @@
 <?php
 	//include "../data/config.php";
-
-	$logged_user = pg_escape_string($_SESSION["login_user"]);
+	$logged_user = "";
+	if(isset($_SESSION["login_user"])) {
+		$logged_user = pg_escape_string($_SESSION["login_user"]);
+	}
 	if($db){
 		$res = pg_query($db, "SELECT username FROM person WHERE username ='".$logged_user."'");
 		$rw = pg_fetch_assoc($res);
