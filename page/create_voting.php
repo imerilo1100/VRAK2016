@@ -1,7 +1,7 @@
 <?php
 include "../data/config.php";
 include "../function/checkvalues.php";
-session_start();
+
 $logged_user = pg_escape_string($_SESSION["login_user"]);
 $id = "";
 if($db){
@@ -23,7 +23,7 @@ $start_date ="";
 $start_time = "";
 $finish_date = "";
 $finish_time = "";
-if($_POST["new_voting"]){
+if(isset($_POST["new_voting"])){
 
     $person = 1;
     $title = pg_escape_string($_POST["title"]);

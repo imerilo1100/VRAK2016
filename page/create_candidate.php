@@ -1,6 +1,6 @@
 <?php
 	include "../data/config.php";
-	session_start();
+
 	$logged_user = pg_escape_string($_SESSION["login_user"]);
 	if($db){
 		$res = pg_query($db, "SELECT username FROM person WHERE username ='".$logged_user."'");
@@ -17,7 +17,7 @@
 	$voting = "";
 	$party = "";
 	include "../data/config.php";
-	if($_POST["add_candidate"]){
+	if(isset($_POST["add_candidate"])){
 		$firstname = pg_escape_string($_POST["firstname"]);
 		$lastname = pg_escape_string($_POST["lastname"]);
 		$voting = pg_escape_string($_POST["voting"]);
@@ -34,7 +34,7 @@
 		        }
 		    }
 		}
-		else{$candidate_error = "Kõik väljad peavad olema täidetud!"}
+		else{$candidate_error = "Kõik väljad peavad olema täidetud!";}
 	}
 ?>
 
