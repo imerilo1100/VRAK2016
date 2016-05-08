@@ -1,6 +1,6 @@
 <!DOCTYPE html> <!--HTML 5: http://www.w3schools.com/tags/tag_doctype.asp -->
 
-<html>
+<html xml:lang="en" lang="en">
 
 	<?php
 		$lang_file = '';
