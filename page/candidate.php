@@ -11,7 +11,7 @@
 
 <div class="candidateSelect">
     <b>Valimised:</b>
-    <form method="post" action="" name="show_voting">
+    <form method="post" name="show_voting">
         <select name="voting">
             <option value="0" <?php if(!$voting)echo"selected='selected'"?> disabled="disabled">Vali</option>
             <?php

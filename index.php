@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--HTML 5: http://www.w3schools.com/tags/tag_doctype.asp -->
+<!DOCTYPE html lang="en"> <!--HTML 5: http://www.w3schools.com/tags/tag_doctype.asp -->
 
 <html>
 

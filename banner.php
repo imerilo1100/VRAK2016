@@ -11,4 +11,4 @@
 			<td><a href="?lang=en"><?php echo $lang['ENGLISH'];?></a></td>
 			<?php } ?>
 	</tr></table>
-<div/>
+</div>
