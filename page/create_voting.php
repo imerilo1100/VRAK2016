@@ -1,6 +1,6 @@
 <?php
-include "../data/config.php";
-include "../function/checkvalues.php";
+//include "../data/config.php";
+//include "../function/checkvalues.php";
 
 $logged_user = pg_escape_string($_SESSION["login_user"]);
 $id = "";

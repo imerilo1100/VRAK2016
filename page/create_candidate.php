@@ -1,5 +1,5 @@
 <?php
-	include "../data/config.php";
+	//include "../data/config.php";
 
 	$logged_user = pg_escape_string($_SESSION["login_user"]);
 	if($db){
@@ -16,7 +16,7 @@
 	$lastname = "";
 	$voting = "";
 	$party = "";
-	include "../data/config.php";
+	//include "../data/config.php";
 	if(isset($_POST["add_candidate"])){
 		$firstname = pg_escape_string($_POST["firstname"]);
 		$lastname = pg_escape_string($_POST["lastname"]);
