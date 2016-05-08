@@ -72,9 +72,9 @@
 			<br>
 			<span class="error"><?php echo $login_error; ?></span><br>
 			<strong><label for="username">Kasutajanimi: </label></strong><br>
-			<input type="text" name="username"><br>
+			<input type="text" id="username" name="username"><br>
 			<strong><label for="password">Salasõna: </label></strong><br>
-			<input type="password" name="password"><br><br>
+			<input type="password" id="password" name="password"><br><br>
 			<input type="submit" value="Sisene" name="check_login">
 		</form>
 	</div>
