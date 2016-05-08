@@ -20,7 +20,7 @@
         $.post("/function/checkvalues.php", {
             title : title
         }).done(function(value){
-            if(value == null){
+            if(value != null){
                 document.getElementById("titleck").innerHTML=title+" on saadaval!";
             }
             else{
