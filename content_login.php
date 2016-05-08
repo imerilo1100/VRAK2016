@@ -29,15 +29,15 @@
 			} else {$login_error = "Kasutajanimi ja/või parool on vale(d)!";}
 		}
 ?>
-	<div id="logininfo"><p>
-			Sisse loginutele:
+	<div id="logininfo">
+			<p>Sisse loginutele:</p>
 			<nav>
 				<ul>
 					<li><a href="?page=create_voting">Lisa valimine</a></li>
 					<li><a href="?page=create_candidate">Lisa kandidaat</a></li>
 				</ul>
 			</nav>
-		</p></div>
+		</div>
 	<div id="loginfields">
 		<div id="togglebuttons">
 			<button class="togglebtn">ID-Kaart</button>
