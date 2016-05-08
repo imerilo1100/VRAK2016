@@ -68,7 +68,7 @@
 				};
 			</script>
 		</div>
-		<form action="" method="post" name="login">
+		<form method="post" name="login">
 			<br>
 			<span class="error"><?php echo $login_error; ?></span><br>
 			<strong><label for="username">Kasutajanimi: </label></strong><br>
@@ -79,11 +79,11 @@
 		</form>
 	</div>
 	<?php }else{ ?>
-	<div id="logininfo"><p>
-			Sisse loginutele:
+	<div id="logininfo">
+		<p>Sisse loginutele:</p>
 			<a href="?page=create_voting">Lisa valimine</a>
 			<a href="?page=create_candidate">Lisa kandidaat</a>
-	</p></div>
+	</div>
 	<div id="loginfields">
 		<b>Oled sisse loginud, <?php echo $logged_user;?></b>
 		<a href="#" onclick="signOut();">Sign out</a>
