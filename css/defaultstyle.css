@@ -18,6 +18,7 @@ p {
 .menu a {
     color: black;
 	text-decoration: none; 
+	margin-left: 10px;
 }
 
 table {
@@ -91,9 +92,20 @@ input[type=submit]{
 	width: 50%; 
 }
 
+#logininfo ul li a {
+	display: inline;
+	padding-top: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+}
+
 #loginfields {
 	float: right; 
 	width: 50%; 
+}
+
+#loginfields input {
+	margin-top: 10px;
 }
 
 #togglebuttons { 
@@ -103,6 +115,7 @@ input[type=submit]{
 #footer{
 	text-align: center; 
 	padding: 20px;
+	max-width: 100%;
 }
 
 .togglebtn {
@@ -134,4 +147,13 @@ input[type=submit]{
 	width:500px;
 	height:380px;
 	margin: 5px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+	
+	#logininfo nav ul li a {
+		display: block;
+		padding-top: 16px;
+	}
+	
 }
