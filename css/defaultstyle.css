@@ -18,6 +18,7 @@ p {
 .menu a {
     color: black;
 	text-decoration: none; 
+	margin-left: 10px;
 }
 
 table {
@@ -54,6 +55,19 @@ input[type=submit]{
 	margin-left: 0px
 }
 
+.ui-autocomplete {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+	background:white;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus {
+	font-weight: bold;
+}
+
 #header {
 	background: #003300; 
 	background: linear-gradient(#004D00, #66FF66); 
@@ -78,9 +92,20 @@ input[type=submit]{
 	width: 50%; 
 }
 
+#logininfo ul li a {
+	display: inline;
+	padding-top: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+}
+
 #loginfields {
 	float: right; 
 	width: 50%; 
+}
+
+#loginfields input {
+	margin-top: 10px;
 }
 
 #togglebuttons { 
@@ -90,6 +115,7 @@ input[type=submit]{
 #footer{
 	text-align: center; 
 	padding: 20px;
+	max-width: 100%;
 }
 
 .togglebtn {
@@ -115,4 +141,31 @@ input[type=submit]{
 .candidateInfo {
 	float: right;
 	margin: 10px;
+}
+
+#map {
+	width:500px;
+	height:380px;
+	margin: 5px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+	
+	#logininfo nav ul li a {
+		display: block;
+		padding-top: 16px;
+	}
+	
+}
+
+table.candInfo th{
+	font-weight: bold;
+}
+
+table.candInfo tr{
+	cursor: pointer;
+}
+
+table.candInfo tr:hover{
+	background-color: #47FF47;
 }
