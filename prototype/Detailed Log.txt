@@ -1,0 +1,186 @@
+8.05.2016 18:23:38: ** Test Logfile by Webserver Stress Tool 8.0.0.1010 Enterprise Edition (Freeware) **
+8.05.2016 18:23:38: © 1998-2012 Paessler AG, http://www.paessler.com
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: Test run on 8.05.2016 18:23:38
+8.05.2016 18:23:38: 
+8.05.2016 18:23:38: ** Project and Scenario Comments, Operator **
+8.05.2016 18:23:38: 
+8.05.2016 18:23:38: ** Test Setup **
+8.05.2016 18:23:38: Test Type: CLICKS (run test until 1 clicks per user)
+8.05.2016 18:23:38: User Simulation: 20 simultaneous users - 10 seconds between clicks
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: Logging Period: Log every 10 seconds
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: ** URLs **
+8.05.2016 18:23:38: URL Sequencing: Users always click the same URL (to spreads load evenly on all URLs, set number of users to a multiple of the number of URLs!)
+8.05.2016 18:23:38: 1 URLs
+8.05.2016 18:23:38:   URL#1: GET vrak2016.herokuapp.com POSTDATA= Click Delay=
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: ** Browser Settings **
+8.05.2016 18:23:38: Browser Simulation: 
+8.05.2016 18:23:38:   User Agent: Mozilla/5.0 (compatible; Webserver Stress Tool 8; Windows)
+8.05.2016 18:23:38:   HTTP Request Timeout: 120 s
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: Recursive Browsing / HTML Parsing: 
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: ** Options **
+8.05.2016 18:23:38: Advanced Settings: 
+8.05.2016 18:23:38: Logging:
+8.05.2016 18:23:38:   Write detailed log(s)
+8.05.2016 18:23:38: Timer: not enabled
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: Local IPs: Automatic
+8.05.2016 18:23:38: Advanced Data Merging Features:
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: ** Client System **
+8.05.2016 18:23:38:   Windows 8/2012 V6.2 (Build 9200) , CPU Proc. Lev. 686 (Rev. 17665) at 2 295 MHz, 
+8.05.2016 18:23:38:   1482 MB available RAM of 8482 MB total physical RAM, 3114 MB available pagefile
+8.05.2016 18:23:38:  
+8.05.2016 18:23:38: Test is starting
+8.05.2016 18:23:38: ----------------------------------------------------
+8.05.2016 18:23:38: Creating Users...
+8.05.2016 18:23:39: Test preparations done
+8.05.2016 18:23:39: 
+8.05.2016 18:23:39: Master Controller will start now...
+8.05.2016 18:23:39: Switching to 20 users.
+8.05.2016 18:23:49: 
+8.05.2016 18:23:49: 
+8.05.2016 18:23:49: *******************************************************************
+8.05.2016 18:23:49: Test Done, now waiting for simulated users to stop surfing 
+8.05.2016 18:23:49: *******************************************************************
+8.05.2016 18:23:49: Waiting for 5 seconds for users to cool down and stop surfing...
+8.05.2016 18:23:50: All surfers passed away...
+8.05.2016 18:23:50: Master Controller is halted
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Results of period #1 (from 0 sec to 12 sec ):
+8.05.2016 18:23:50: ****************************************************************
+8.05.2016 18:23:50: Analyzed Time span of this period: 11 287 msec
+8.05.2016 18:23:50: Sent/Received Requests: 40 / 40 (=0,00% not answered in this period)
+8.05.2016 18:23:50: Completed Hits: 20 (including images, frames etc.)
+8.05.2016 18:23:50: Completed Clicks: 20 with 0 Errors (=0,00%)
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Results for Images for this period:
+8.05.2016 18:23:50: Image Hits: 0 with 0 Errors
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Spectrum of Click Times
+8.05.2016 18:23:50: 0,00% of All Users waited <100ms
+8.05.2016 18:23:50: 100,00% of All Users waited <200ms
+8.05.2016 18:23:50: 0,00% of All Users waited <500ms
+8.05.2016 18:23:50: 0,00% of All Users waited <1s
+8.05.2016 18:23:50: 0,00% of All Users waited <2s
+8.05.2016 18:23:50: 0,00% of All Users waited <5s
+8.05.2016 18:23:50: 0,00% of All Users waited <10s
+8.05.2016 18:23:50: 0,00% of All Users waited <20s
+8.05.2016 18:23:50: 0,00% of All Users waited <50s
+8.05.2016 18:23:50: 0,00% of All Users waited <100s
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Measured Times:
+8.05.2016 18:23:50: Average Time to Create Local Socket for 20 Users: 6 ms 
+8.05.2016 18:23:50: Average DNS Time for 20 Users: 4 ms 
+8.05.2016 18:23:50: Average Time to Connect for 20 Users: 59 ms 
+8.05.2016 18:23:50: Average Time to First Byte for 20 Users: 129 ms 
+8.05.2016 18:23:50: Average Click Time for 20 Users: 134 ms 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Hits per Second: 1,77 (equals 6 379,00 Hits per Hour)
+8.05.2016 18:23:50: Successful clicks per Second: 1,77 (equals 6 379,00 Clicks per Hour)
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Results per URL for this Period:
+8.05.2016 18:23:50: URL#1 (): Average Click Time 134 ms, 20 Clicks, 0 Errors, 
+8.05.2016 18:23:50: Average Click Time of all URLs: 134 ms 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Resulting page statuscodes for this period:
+8.05.2016 18:23:50: 20x "200" (=OK)
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Datavolume and Bandwidth for this period:
+8.05.2016 18:23:50: Average User Bandwidth: 206,26 kbit/s 
+8.05.2016 18:23:50: Total Bytes: 68 100 Bytes (68 kByte) (Throughput ~48 kbit/sec)
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Results of complete test
+8.05.2016 18:23:50: ****************************************************************
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: ** Results per User for complete test **
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: User #1: Avg. Click Time: 196,87 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 138,36 kbit/s
+8.05.2016 18:23:50: User #2: Avg. Click Time: 133,90 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 203,43 kbit/s
+8.05.2016 18:23:50: User #3: Avg. Click Time: 134,55 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 202,46 kbit/s
+8.05.2016 18:23:50: User #4: Avg. Click Time: 133,63 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 203,85 kbit/s
+8.05.2016 18:23:50: User #5: Avg. Click Time: 135,68 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 200,77 kbit/s
+8.05.2016 18:23:50: User #6: Avg. Click Time: 122,69 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 222,02 kbit/s
+8.05.2016 18:23:50: User #7: Avg. Click Time: 129,67 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 210,07 kbit/s
+8.05.2016 18:23:50: User #8: Avg. Click Time: 124,77 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 218,32 kbit/s
+8.05.2016 18:23:50: User #9: Avg. Click Time: 120,69 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 225,69 kbit/s
+8.05.2016 18:23:50: User #10: Avg. Click Time: 125,05 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 217,84 kbit/s
+8.05.2016 18:23:50: User #11: Avg. Click Time: 127,71 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 213,29 kbit/s
+8.05.2016 18:23:50: User #12: Avg. Click Time: 138,80 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 196,26 kbit/s
+8.05.2016 18:23:50: User #13: Avg. Click Time: 130,76 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 208,32 kbit/s
+8.05.2016 18:23:50: User #14: Avg. Click Time: 128,09 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 212,67 kbit/s
+8.05.2016 18:23:50: User #15: Avg. Click Time: 133,26 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 204,42 kbit/s
+8.05.2016 18:23:50: User #16: Avg. Click Time: 148,52 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 183,41 kbit/s
+8.05.2016 18:23:50: User #17: Avg. Click Time: 118,07 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 230,72 kbit/s
+8.05.2016 18:23:50: User #18: Avg. Click Time: 129,75 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 209,95 kbit/s
+8.05.2016 18:23:50: User #19: Avg. Click Time: 123,71 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 220,19 kbit/s
+8.05.2016 18:23:50: User #20: Avg. Click Time: 134,07 ms, 1 Clicks, 1 Hits, 0 Errors, 3 405 Bytes, 203,18 kbit/s
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: ** Results per URL for complete test **
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: URL#1 (): Average Click Time 134 ms, 20 Clicks, 0 Errors 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: Total Number of Clicks: 20 (0 Errors)
+8.05.2016 18:23:50: Average Click Time of all URLs: 134 ms 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: 
+8.05.2016 18:23:50: !! Glossary:
+8.05.2016 18:23:50: !! Click: A simulated mouse click of a user sending a request (one of the URLs from the URL list) to the server and immediately requesting any necessary redirects, frames and images (if enabled).
+8.05.2016 18:23:50: !! Request: A HTTP request sent to the server regardless of an answer.
+8.05.2016 18:23:50: !! Hit: A completed HTTP request (i.e. sent to the server and answered completely). Hits can be the PAGE request of a "click" or its frames, images etc.
+8.05.2016 18:23:50: !! Time for DNS: Time to resolve a URL's domain name using the client system's current DNS server.
+8.05.2016 18:23:50: !! Time to connect: Time to set up a connection to the server.
+8.05.2016 18:23:50: !! Time to first byte (TFB): Time between initiating a request and receiving the first byte of data from the server.
+8.05.2016 18:23:50: !! Click Time: The time a user had to wait until his "click" was finished (including redirections/frames/images etc.).
+8.05.2016 18:23:50: !! User Bandwidth: The bandwidth a user was able to achieve.
+8.05.2016 18:23:50: !! Sent Requests: Number of requests sent to the server during a period.
+8.05.2016 18:23:50: !! Received Requests: Number of answers received from the server during a period.
+8.05.2016 18:23:50: 
+8.05.2016 18:23:51: 
+8.05.2016 18:23:51: Saving summary log to "C:\Program Files (x86)\Webserver Stress Tool 8\logs\Summary Log.txt"
+8.05.2016 18:23:51: Saving detailed log to "C:\Program Files (x86)\Webserver Stress Tool 8\logs\Detailed Log.txt"
+8.05.2016 18:23:51: Saving Chart Data: Spectrum of Click Times-.csv
+8.05.2016 18:23:51: Saving Chart Data: Server and User Bandwidth-Server Bandwidth _kbit_s_.csv
+8.05.2016 18:23:51: Saving Chart Data: Server and User Bandwidth-Avg_ User Bandwidth _kbit_s_.csv
+8.05.2016 18:23:51: Saving Chart Data: Server and User Bandwidth-.csv
+8.05.2016 18:23:51: Saving Chart Data: Hierarchy and Times of All Hits-Pages.csv
+8.05.2016 18:23:51: Saving Chart Data: Hierarchy and Times of All Hits-Images.csv
+8.05.2016 18:23:51: Saving Chart Data: Hierarchy and Times of All Hits-Frames.csv
+8.05.2016 18:23:51: Saving Chart Data: Hierarchy and Times of All Hits-Errors.csv
+8.05.2016 18:23:51: Saving Chart Data: Hierarchy and Times of All Hits-.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Times and Errors _per URL_-.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Times and Errors _per URL_-Req-Times_ .csv
+8.05.2016 18:23:51: Saving Chart Data: Click Times and Errors _per URL_-Req-Times_ All Images.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Times and Errors _per URL_-Errors_ .csv
+8.05.2016 18:23:51: Saving Chart Data: Click Times and Errors _per URL_-Errors_ All Images.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Time_ Hits_s_ Users_s _all URLs_-Click Time _ms_.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Time_ Hits_s_ Users_s _all URLs_-Clicks per Second.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Time_ Hits_s_ Users_s _all URLs_-Hits per Second.csv
+8.05.2016 18:23:51: Saving Chart Data: Click Time_ Hits_s_ Users_s _all URLs_-.csv
+8.05.2016 18:23:51: Saving Chart Data: Open Requests _ Transferred Data-Open Requests.csv
+8.05.2016 18:23:51: Saving Chart Data: Open Requests _ Transferred Data-Sent Requests per second.csv
+8.05.2016 18:23:51: Saving Chart Data: Open Requests _ Transferred Data-Received Requests per second.csv
+8.05.2016 18:23:51: Saving Chart Data: Open Requests _ Transferred Data-Network Traffic _kbit_s_.csv
+8.05.2016 18:23:51: Saving Chart Data: Open Requests _ Transferred Data-.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-Click Time.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-Time to First Byte.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-Time to Connect.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-Time for DNS.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-Time for local socket.csv
+8.05.2016 18:23:51: Saving Chart Data: Protocol Times for all URLs-.csv
+8.05.2016 18:23:51: Saving Chart Data: Transferred Data _ System Memory _ CPU Load-System Memory _MB_.csv
+8.05.2016 18:23:51: Saving Chart Data: Transferred Data _ System Memory _ CPU Load-Network Traffic _kbit_s_.csv
+8.05.2016 18:23:51: Saving Chart Data: Transferred Data _ System Memory _ CPU Load-Local CPU Load ___.csv
+8.05.2016 18:23:51: Saving Chart Data: Transferred Data _ System Memory _ CPU Load-.csv
+8.05.2016 18:23:51: Saving Chart Data: Transferred Data _ System Memory _ CPU Load-Local CPU Load ___.csv
