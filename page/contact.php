@@ -1,4 +1,3 @@
-
 <script>
     //google.maps.event.addDomListener(window, 'load', initMap);
     function initMap() {
@@ -26,5 +25,6 @@
     }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFNX4nLshrpB52NM82E-ssl-J-8XCf3zg&callback=initMap"
-        type="text/javascript"></script>
+        type="text/javascript">
+</script>
 <div id="map" style="width:500px;height:380px;"></div>
