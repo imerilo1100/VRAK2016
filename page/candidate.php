@@ -20,8 +20,12 @@
 		            while($row = pg_fetch_assoc($result)){
 		                $id = $row["id"];
 		                $title = $row["title"];
+						$finish_date = $row["finish_date"];
+						$finish_date = str_replace("/", ".", $finish_date);
+						$current = time();
+						if(strtotime($finish_date) < $current) {
 		                if($voting == $id) {echo "<option value='$id' selected='selected'>$title</option>";}
-		                else{echo "<option value='$id'>$title</option>";}
+		                else{echo "<option value='$id'>$title</option>";}}
 		            }
 		        }
             ?>
