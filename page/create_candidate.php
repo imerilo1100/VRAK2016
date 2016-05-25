@@ -46,43 +46,31 @@
 		}
 		else{$candidate_error = "Kõik väljad peavad olema täidetud!";}
 	}
-
-
-    ?>
+?>
 
 <form name="create_candidate" method="post" action="">
-        <select id="voting" name="voting">
-            <option value="0" <?php if(!$voting)echo"selected='selected'"?> disabled="disabled">Vali</option>
-            <?php
-            if($db){
-                $result = pg_query($db, "SELECT * FROM voting");
-                while($row = pg_fetch_assoc($result)){
-                    $id = $row["id"];
-                    $title = $row["title"];
-                    $start_date = $row["start_date"];
-                    $finish_date = $row["finish_date"];
-                    $start_date = str_replace("/", ".", $start_date);
-                    $current = time();
-                    if(strtotime($start_date) > $current) { //kontrollib kas hääletus ei ole aktiivne!!!!
-						if ($voting == $id) {
-							echo "<option value='$id' selected='selected'>$title</option>";
-						} else {
-							echo "<option value='$id'>$title</option>";
-						}
-					}
-
-                }
-
-            }
-            ?>
-        </select><br>
-        <input type="submit" value="Vali" name="select_vote">
-
+	<select id="voting" name="voting">
+		<option value="0" <?php if(!$voting)echo"selected='selected'"?> disabled="disabled">Vali</option>
         <?php
-
-        if($select_vote){
-
+		    if($db){
+				$result = pg_query($db, "SELECT * FROM voting");
+				while($row = pg_fetch_assoc($result)){
+					$id = $row["id"];
+					$title = $row["title"];
+					$start_date = $row["start_date"];
+					$finish_date = $row["finish_date"];
+					$start_date = str_replace("/", ".", $start_date);
+					$current = time();
+					if(strtotime($start_date) > $current) { //kontrollib kas hääletus ei ole aktiivne!!!!
+						if ($voting == $id) {echo "<option value='$id' selected='selected'>$title</option>";} 
+						else {echo "<option value='$id'>$title</option>";}
+					}
+				}
+			}
         ?>
+    </select><br>
+    <input type="submit" value="Vali" name="select_vote">
+    <?php if($select_vote){ ?>
     <span><?php echo $candidate_error;?></span><br>
     <label for="firstname"><strong>Kandidaadid eesnimi:</strong></label><br>
     <input type="text" id="firstname" name="firstname" value="<?php echo $firstname;?>"><br>
@@ -101,11 +89,8 @@
                     $region_text = $row["regions"];;
                     $regs = explode(PHP_EOL, $region_text);
                     for ($i = 0; $i < count($regs); $i++){
-                        if ($region == $regs[$i]) {
-                            echo "<option value='$regs[$i]' selected='selected'>$regs[$i]</option>";
-                        } else {
-                            echo "<option value='$regs[$i]'>$regs[$i]</option>";
-                        }
+                        if ($region == $regs[$i]) {echo "<option value='$regs[$i]' selected='selected'>$regs[$i]</option>";} 
+						else {echo "<option value='$regs[$i]'>$regs[$i]</option>";}
 					}
 		        }
 		    }

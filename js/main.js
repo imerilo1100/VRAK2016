@@ -60,7 +60,6 @@
             }
         })
 
-
         $(".candInfo tr").click(function() {
             $("#sel_candidate").val (this.id);
         });
